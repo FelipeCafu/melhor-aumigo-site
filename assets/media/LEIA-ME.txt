@@ -1,0 +1,16 @@
+COMO COLOCAR FOTOS E VÍDEOS REAIS NO SITE
+==========================================
+
+1) Baixe do Google Drive os arquivos que você mais gostou (banho, tosa, hidratação).
+2) Coloque-os AQUI dentro da pasta "_raw" (pode ser HEIC, JPG, MOV ou MP4 mesmo).
+3) Me avise no chat ("já coloquei os arquivos na pasta media/_raw").
+
+Eu cuido do resto:
+ - Converto HEIC -> JPG e MOV -> MP4 leve (otimizado pra web)
+ - Gero as "capas" (poster) dos vídeos
+ - Encaixo automaticamente no HERO, nos BASTIDORES e no ANTES/DEPOIS
+
+Se quiser já deixar pronto sem mim:
+ - HERO: salve uma foto vertical bonita como  hero.jpg  (nesta pasta media/)
+ - ANTES/DEPOIS: salve  antes.jpg  e  depois.jpg
+ - BASTIDORES: salve vídeos .mp4 (ou fotos .jpg) e liste em  media.json

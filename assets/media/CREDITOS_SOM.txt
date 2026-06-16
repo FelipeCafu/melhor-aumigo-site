@@ -1,0 +1,2 @@
+bark.ogg — "Barking of a dog" (Wikimedia Commons), licença Creative Commons.
+Latido do mascote. Para trocar por um latido próprio, coloque bark.mp3 nesta pasta (tem prioridade).
