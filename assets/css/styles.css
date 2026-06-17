@@ -1021,3 +1021,18 @@ body{counter-reset:sechead}
   white-space:nowrap;box-shadow:var(--sh-md)}
 .tour-hand{font-size:2rem;animation:tourBounce 1s ease-in-out infinite;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))}
 @keyframes tourBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+
+/* =========================================================
+   FIX MOBILE — hero empilha + sem estouro horizontal
+   (corrige a regra .lux-hero-grid 1fr .96fr que vazava no mobile)
+   ========================================================= */
+html{overflow-x:hidden}
+@media (max-width:980px){
+  .lux-hero-grid{grid-template-columns:1fr;text-align:center}
+  .lux-cta,.lux-trust,.lux-kicker{justify-content:center}
+  .lux-sub{margin-inline:auto}
+  .lux-hero-art{order:-1;margin-bottom:8px}
+  .lux-medal{align-self:center}
+}
+/* segurança extra: nenhum popup pode passar da largura da tela */
+.promo-modal,.reward-modal,.optin-modal{max-width:min(460px,100%)}
