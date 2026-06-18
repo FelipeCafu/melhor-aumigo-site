@@ -1017,9 +1017,9 @@ body{counter-reset:sechead}
 .tour-arrow{position:fixed;left:-999px;top:-999px;z-index:115;transform:translate(-50%,-100%);
   pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:4px;opacity:0;transition:opacity .3s}
 .tour-arrow.show{opacity:1}
-.tour-label{background:var(--gold);color:#0B0B0D;font-weight:800;font-size:.85rem;padding:7px 14px;border-radius:99px;
+.tour-label{background:var(--gold);color:#0B0B0D;font-weight:800;font-size:1.05rem;padding:10px 20px;border-radius:99px;
   white-space:nowrap;box-shadow:var(--sh-md)}
-.tour-hand{font-size:2rem;animation:tourBounce 1s ease-in-out infinite;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))}
+.tour-hand{font-size:3.4rem;animation:tourBounce 1s ease-in-out infinite;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))}
 @keyframes tourBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
 
 /* =========================================================
@@ -1036,3 +1036,7 @@ html{overflow-x:hidden}
 }
 /* segurança extra: nenhum popup pode passar da largura da tela */
 .promo-modal,.reward-modal,.optin-modal{max-width:min(460px,100%)}
+
+/* #5 — palavra "Hydra" sempre na cor da marca (roxo) */
+.hydra{color:#480080;font-weight:inherit}
+.lux-hero .hydra,.dark-sec .hydra,.cta-final .hydra{color:#B07BD6}  /* roxo mais claro em fundos escuros */
