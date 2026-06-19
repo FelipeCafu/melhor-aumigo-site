@@ -103,7 +103,7 @@
       var list=cat&&cat!=='Todas'?posts.filter(function(p){return p.categoria===cat;}):posts;
       grid.innerHTML=list.map(function(p,i){
         return '<a class="post-card" href="posts/'+p.slug+'.html">'+
-          '<div class="post-thumb" style="background:'+grad[i%4]+'"><span class="cat">'+p.categoria+'</span>'+(emoji[p.categoria]||'🐾')+'</div>'+
+          '<div class="post-thumb" style="background-image:url(img/post'+((i%7)+1)+'.jpg);background-size:cover;background-position:center"><span class="cat">'+p.categoria+'</span></div>'+
           '<div class="post-body"><span class="meta">'+p.data+' · '+p.tempoLeitura+'</span><h3>'+p.titulo+'</h3><p>'+p.resumo+'</p>'+
           '<span class="serv-link">Ler matéria <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>';
       }).join('');
