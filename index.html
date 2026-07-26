@@ -594,9 +594,18 @@
       </div>
       <a class="btn btn-ghost" href="blog/index.html">Ver todas as matérias</a>
     </div>
-    <div class="blog-grid" id="blogGrid">
-      <!-- Preenchido via JS a partir de blog/posts.json -->
+    <div class="blog-carousel">
+      <button class="blog-nav prev" id="blogPrev" aria-label="Ver matéria anterior" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <div class="blog-track" id="blogGrid">
+        <!-- Preenchido via JS a partir de blog/posts.json -->
+      </div>
+      <button class="blog-nav next" id="blogNext" aria-label="Ver próxima matéria">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
     </div>
+    <div class="blog-dots" id="blogDots" aria-hidden="true"></div>
   </div>
 </section>
 

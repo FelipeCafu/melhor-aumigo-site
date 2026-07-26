@@ -817,12 +817,15 @@
     fetch('blog/posts.json')
       .then(r => r.json())
       .then(posts => {
-        const top = posts.slice(0, 3);
-        blogGrid.innerHTML = top.map((p, i) => `
-          <a class="post-card reveal${i ? ' d' + i : ''}" href="blog/posts/${p.slug}.html">
-            <div class="post-thumb" style="background:${grad[i % 3]}">
+        // Carrossel: TODAS as matérias, cada card com sua foto (blog/img/...)
+        blogGrid.innerHTML = posts.map((p, i) => {
+          const foto = p.img ? `background-image:url('blog/${p.img}')` : `background:${grad[i % 3]}`;
+          const cls = p.img ? ' has-photo' : '';
+          return `
+          <a class="post-card reveal" href="blog/posts/${p.slug}.html">
+            <div class="post-thumb${cls}" style="${foto}">
               <span class="cat">${p.categoria}</span>
-              ${emoji[p.categoria] || '🐾'}
+              ${p.img ? '' : (emoji[p.categoria] || '🐾')}
             </div>
             <div class="post-body">
               <span class="meta">${p.data} · ${p.tempoLeitura}</span>
@@ -830,8 +833,40 @@
               <p>${p.resumo}</p>
               <span class="serv-link">Ler matéria <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </div>
-          </a>`).join('');
+          </a>`;
+        }).join('');
         $$('.reveal', blogGrid).forEach(el => io.observe(el));
+
+        /* ---- Setas + bolinhas do carrossel ---- */
+        const prev = $('#blogPrev'), next = $('#blogNext'), dotsWrap = $('#blogDots');
+        const step = () => {
+          const card = blogGrid.querySelector('.post-card');
+          const gap = 24;
+          return card ? card.getBoundingClientRect().width + gap : blogGrid.clientWidth * 0.9;
+        };
+        prev && prev.addEventListener('click', () => blogGrid.scrollBy({ left: -step(), behavior: 'smooth' }));
+        next && next.addEventListener('click', () => blogGrid.scrollBy({ left: step(), behavior: 'smooth' }));
+
+        // bolinhas (1 por card)
+        if (dotsWrap) {
+          dotsWrap.innerHTML = posts.map((_, i) => `<button data-i="${i}" aria-label="Ir para matéria ${i + 1}"></button>`).join('');
+          dotsWrap.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+            blogGrid.scrollTo({ left: step() * (+b.dataset.i), behavior: 'smooth' });
+          }));
+        }
+
+        const sync = () => {
+          const max = blogGrid.scrollWidth - blogGrid.clientWidth - 4;
+          if (prev) prev.hidden = blogGrid.scrollLeft <= 4;
+          if (next) next.hidden = blogGrid.scrollLeft >= max;
+          if (dotsWrap) {
+            const idx = Math.round(blogGrid.scrollLeft / step());
+            dotsWrap.querySelectorAll('button').forEach((b, i) => b.classList.toggle('on', i === idx));
+          }
+        };
+        blogGrid.addEventListener('scroll', sync, { passive: true });
+        window.addEventListener('resize', sync);
+        sync();
       })
       .catch(() => {
         blogGrid.innerHTML = '<p style="color:var(--tx-soft)">Em breve, nossas primeiras matérias. 🐾</p>';
