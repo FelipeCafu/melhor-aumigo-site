@@ -5,7 +5,8 @@
     "resumo": "Seu cão sai do banho perfumado e no dia seguinte o cheiro sumiu? Entenda como funcionam as colônias pet, por que a fixação depende do banho inteiro e como prolongar o frescor em casa.",
     "categoria": "Produtos",
     "data": "26 jul 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post1.jpg"
   },
   {
     "slug": "secagem-profissional-pelo-macio-sem-frizz",
@@ -13,7 +14,8 @@
     "resumo": "Muita gente acha que o banho termina no enxágue — mas é a secagem que define brilho, maciez e a saúde da pele. Entenda por que a secagem profissional faz toda a diferença.",
     "categoria": "Tosa",
     "data": "25 jul 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post2.jpg"
   },
   {
     "slug": "como-e-uma-experiencia-de-pet-spa",
@@ -21,7 +23,8 @@
     "resumo": "Muito mais que um banho: conheça o passo a passo de uma experiência de Pet Spa, do acolhimento à secagem profissional, e por que ela transforma o bem-estar do seu cão.",
     "categoria": "Cuidados",
     "data": "23 jul 2026",
-    "tempoLeitura": "7 min de leitura"
+    "tempoLeitura": "7 min de leitura",
+    "img": "img/post3.jpg"
   },
   {
     "slug": "como-escolher-shampoo-de-qualidade-hipoalergenico",
@@ -29,7 +32,8 @@
     "resumo": "Nem todo shampoo serve para qualquer pet. Entenda o que faz um produto ser de verdade de qualidade, quando o hipoalergênico é indicado e por que o pH importa tanto para a pele do seu cão.",
     "categoria": "Produtos",
     "data": "22 jul 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post4.jpg"
   },
   {
     "slug": "banho-filhote-e-cao-idoso-cuidados-especiais",
@@ -37,7 +41,8 @@
     "resumo": "Patinhas de primeira viagem e vovôs de quatro patas pedem um banho com mais calma, temperatura certa e carinho. Veja como cuidamos de cada fase no Melhor Aumigo.",
     "categoria": "Cuidados",
     "data": "21 jul 2026",
-    "tempoLeitura": "7 min de leitura"
+    "tempoLeitura": "7 min de leitura",
+    "img": "img/post5.jpg"
   },
   {
     "slug": "tosa-tesoura-x-maquina-qual-a-melhor",
@@ -45,7 +50,8 @@
     "resumo": "Entenda a diferença entre a tosa na tesoura e a tosa na máquina, quando cada uma é indicada e por que a secagem profissional muda o resultado final da pelagem.",
     "categoria": "Tosa",
     "data": "20 jul 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post6.jpg"
   },
   {
     "slug": "rotina-de-banho-ideal-por-raca-e-porte",
@@ -53,7 +59,8 @@
     "resumo": "Cada pet tem uma pele, um pelo e um jeitinho. Descubra a rotina de banho ideal por raça e porte para manter seu aumigo limpo, cheiroso e com a pele saudável.",
     "categoria": "Banho",
     "data": "14 jul 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post7.jpg"
   },
   {
     "slug": "hidratacao-de-pelos-brilho-maciez-sem-nos",
@@ -61,7 +68,8 @@
     "resumo": "Pelo opaco, ressecado e cheio de nós tem solução. Entenda como a hidratação profissional devolve brilho, maciez e saúde à pelagem do seu pet — e por que ela vai muito além do banho comum.",
     "categoria": "Produtos",
     "data": "14 jul 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post8.jpg"
   },
   {
     "slug": "taxi-dog-como-funciona-leva-e-traz",
@@ -69,7 +77,8 @@
     "resumo": "Sem tempo para levar o seu cão ao banho? Entenda como funciona o Taxi Dog do Melhor Aumigo, no Cruzeiro Velho, e por que ele é seguro, confortável e uma mão na roda para a rotina corrida em Brasília.",
     "categoria": "Cuidados",
     "data": "9 jul 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post9.jpg"
   },
   {
     "slug": "sinais-de-problema-de-pele-no-banho",
@@ -77,7 +86,8 @@
     "resumo": "Na hora do banho, o pelo se abre e a pele fica à mostra. É o momento perfeito para perceber vermelhidão, casquinhas, caroços e mau cheiro — sinais que pedem atenção. Veja o que observar.",
     "categoria": "Saúde",
     "data": "08 jul 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post10.jpg"
   },
   {
     "slug": "racao-premium-x-comum-pele-e-pelo",
@@ -85,7 +95,8 @@
     "resumo": "O brilho, a maciez e a saúde da pelagem começam no prato. Entenda por que a ração certa faz tanta diferença quanto o banho — e potencializa o resultado do seu Pet Spa.",
     "categoria": "Nutrição",
     "data": "08 jul 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post11.jpg"
   },
   {
     "slug": "remocao-de-subpelo-cachorro-quando-fazer",
@@ -93,7 +104,8 @@
     "resumo": "Seu cão solta pelo o ano inteiro e nada resolve? Entenda o que é o subpelo, quando removê-lo e por que esse cuidado faz toda a diferença na pele, no brilho e no conforto do seu pet.",
     "categoria": "Tosa",
     "data": "19 jun 2026",
-    "tempoLeitura": "6 min de leitura"
+    "tempoLeitura": "6 min de leitura",
+    "img": "img/post12.jpg"
   },
   {
     "slug": "tosa-higienica-o-que-e-e-por-que-importa",
@@ -101,7 +113,8 @@
     "resumo": "Não é cortar o pelo todo: a tosa higiênica cuida das regiões que mais acumulam sujeira e causam desconforto. Entenda por que ela faz tanta diferença na saúde e no bem-estar do seu pet.",
     "categoria": "Tosa",
     "data": "16 jun 2026",
-    "tempoLeitura": "4 min de leitura"
+    "tempoLeitura": "4 min de leitura",
+    "img": "img/post13.jpg"
   },
   {
     "slug": "banho-sem-estresse-caes-ansiosos",
@@ -109,7 +122,8 @@
     "resumo": "Tremores, choro e tentativa de fuga na hora do banho têm solução. Veja como o manejo calmo e sem pressa transforma o banho em um momento tranquilo.",
     "categoria": "Comportamento",
     "data": "12 jun 2026",
-    "tempoLeitura": "5 min de leitura"
+    "tempoLeitura": "5 min de leitura",
+    "img": "img/post14.jpg"
   },
   {
     "slug": "com-que-frequencia-dar-banho-no-cachorro",
@@ -117,7 +131,8 @@
     "resumo": "Toda semana? Uma vez por mês? A resposta depende do pelo, da pele e da rotina do seu pet. Veja o guia completo por tipo de cão.",
     "categoria": "Banho",
     "data": "9 jun 2026",
-    "tempoLeitura": "4 min de leitura"
+    "tempoLeitura": "4 min de leitura",
+    "img": "img/post15.jpg"
   },
   {
     "slug": "linha-hydra-por-que-profissionais-usam",
@@ -125,6 +140,7 @@
     "resumo": "Existe diferença entre o shampoo do supermercado e o de uso profissional? Sim — e ela aparece no pelo. Entenda a linha Hydra.",
     "categoria": "Produtos",
     "data": "5 jun 2026",
-    "tempoLeitura": "5 min de leitura"
+    "tempoLeitura": "5 min de leitura",
+    "img": "img/post16.jpg"
   }
 ]
