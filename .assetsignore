@@ -1,0 +1,9 @@
+.git
+.gitignore
+.assetsignore
+node_modules
+wrangler.jsonc
+netlify.toml
+*.md
+*.bak
+*.bak_*

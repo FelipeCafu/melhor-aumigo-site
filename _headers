@@ -1,0 +1,17 @@
+# Cloudflare — mesmas regras que existiam no netlify.toml, no formato _headers.
+
+# Nunca cachear HTML: todo deploy aparece sem o visitante limpar o cache.
+/
+  Cache-Control: no-cache, no-store, must-revalidate
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+/blog/*
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Assets tem nome versionado/estavel: pode cachear forte.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
